@@ -1,65 +1,70 @@
-<p>Lawyer Connect Platform</p>
-A platform designed to connect lawyers with clients, providing a seamless way to find legal professionals and get consultations. This platform aims to make legal services more accessible by centralizing the search, booking, and communication process for both lawyers and clients.
+# Getting Started with Create React App
 
-Features
-Lawyer Directory: Search and browse lawyers by specialty, location, and availability.
-Client-Lawyer Communication: Secure messaging for consultations and queries.
-Appointment Booking: Schedule appointments with lawyers directly through the platform.
-Payment Integration: Easy online payment options for consultation fees.
-Ratings and Reviews: Clients can rate and review lawyers based on their experiences.
-Lawyer Profiles: Lawyers can manage their profiles, including their specialties, experience, and availability.
-Real-Time Notifications: Get notified about appointment status, messages, and more.
-Tech Stack
-Frontend: React.js / Vue.js / Angular (Choose your preferred framework)
-Backend: Node.js with Express.js / Django / Ruby on Rails (Choose your preferred backend technology)
-Database: MongoDB / PostgreSQL / MySQL (Choose your preferred database)
-Authentication: JWT, OAuth2, or other secure methods
-Payment Integration: Stripe / PayPal / Razorpay (Choose based on your location or preference)
-Deployment: AWS / Heroku / DigitalOcean (Choose your preferred cloud platform)
-Installation
-Clone the repository:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-bash
-Copy code
-git clone https://github.com/yourusername/lawyer-connect.git
-cd lawyer-connect
-Install dependencies for the backend:
+## Available Scripts
 
-bash
-Copy code
-cd backend
-npm install  # or pip install -r requirements.txt for Python
-Install dependencies for the frontend:
+In the project directory, you can run:
 
-bash
-Copy code
-cd frontend
-npm install  # or yarn install
-Set up environment variables:
+### `npm start`
 
-Create a .env file in the root directory and configure your database URL, API keys, and other necessary configurations.
-Run the application locally:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Backend:
-bash
-Copy code
-npm run dev
-Frontend:
-bash
-Copy code
-npm start
-Open your browser and visit http://localhost:3000 to see the platform in action.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Contributing
-We welcome contributions! If you’d like to contribute, please follow these steps:
+### `npm test`
 
-Fork the repository.
-Create a new branch for your feature/bugfix (git checkout -b feature-name).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
-Open a pull request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Contact
-For any questions or feedback, feel free to reach out to aavi4012@gmail.com or open an issue on GitHub.
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

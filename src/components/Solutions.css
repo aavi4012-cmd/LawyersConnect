@@ -1,0 +1,42 @@
+.solutions {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .solutions h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .solutions p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .solutions-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  

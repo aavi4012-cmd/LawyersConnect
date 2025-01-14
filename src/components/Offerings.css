@@ -1,0 +1,178 @@
+/* Offerings Section Styling */
+.offerings {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.offerings h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1e60d3; /* Primary theme color */
+  margin-bottom: 40px;
+  text-transform: capitalize; /* Title case for better styling */
+}
+
+/* Offerings Grid Container */
+.offerings-grid {
+  display: flex;
+  justify-content: center;
+  gap: 0px; /* Explicitly set to 0 */
+  flex-wrap: wrap; /* Allow wrapping */
+  margin: 0 auto; /* Ensure centered alignment */
+  padding: 0; /* Ensure no padding inside the container */
+}
+
+/* Individual Offering Card */
+.offering {
+  margin: 0; /* Remove all margins */
+  padding: 10px; /* Padding within the card */
+  width: 270px; /* Ensure a consistent width */
+}
+
+/* Reduce gap for all screens */
+.offerings-grid > .offering {
+  gap: 10px; /* Add uniform gap between all cards */
+}
+
+
+/* Media Query for Medium Screens */
+@media (max-width: 768px) {
+  .offerings-grid {
+    gap: 10px; /* Adjust spacing between cards */
+  }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+  .offerings-grid {
+    gap: 5px; /* Minimal gap for very small screens */
+  }
+}
+
+
+
+/* Hover Effects for Cards */
+.offering:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.offering::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 96, 211, 0.05); /* Subtle hover overlay */
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.offering:hover::before {
+  opacity: 1;
+}
+/* Individual Offering Card */
+.offering {
+  background-color: #ffffff; /* White background */
+  width: 270px; /* Slightly larger than image width (256px) to fit content */
+  padding: 10px; /* Reduce padding to minimize box size */
+  border-radius: 40px; /* Keeps the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin: 0 auto 20px; /* Center the box and add bottom margin */
+  position: relative;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+
+/* Offering Title */
+.offering p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+  z-index: 1;
+  position: relative;
+  text-transform: capitalize;
+}
+
+/* Add subtle animations for fade-in */
+/* General Styling for Offering Cards */
+.offering {
+  opacity: 0; /* Start invisible */
+  transform: translateY(30px) scale(0.95); /* Start slightly below and smaller */
+  animation: professionalFadeInUp 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards; /* Smooth and natural animation */
+}
+
+/* Keyframes for a Professional Entrance Animation */
+@keyframes professionalFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95); /* Starting state */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(15px) scale(1); /* Midpoint with slight upward movement and normal size */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Final state */
+  }
+}
+
+/* Staggered Delay for Each Offering Card */
+.offering:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.offering:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.offering:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.offering:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1024px) {
+  .offerings-grid {
+    gap: 20px; /* Adjust gap for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .offering {
+    width: 100%; /* Full-width on smaller screens */
+    max-width: 340px; /* Prevent oversized cards */
+    margin-bottom: 20px;
+  }
+
+  .offerings-grid {
+    justify-content: space-between; /* Adjust alignment */
+  }
+}
+
+@media (max-width: 480px) {
+  .offerings h2 {
+    font-size: 28px; /* Smaller title for mobile */
+    margin-bottom: 20px;
+  }
+
+  .offering img {
+    height: 140px; /* Adjust image height for mobile */
+  }
+
+  .offering p {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+}

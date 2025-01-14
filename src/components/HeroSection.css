@@ -1,0 +1,161 @@
+/* Hero Section */
+.hero-section {
+  background-image: url('/public/hero-background.png'); /* Replace with your actual image path */
+  background-size: 1360px 664px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 664px;
+  margin-top: 30px; /* Increased margin to make curves visible */
+  padding-top: 20px; /* Adds padding within the hero section for alignment */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  filter: brightness(1.8); /* Brightens the image */
+  background-color: #ffffff; /* Pure white background */
+}
+
+
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay to enhance text readability */
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.hero-content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.hero-points li {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.consult-now {
+  background-color: #007BFF; /* Blue background */
+  color: white;
+  padding: 12px 24px;
+  font-size: 180px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px; /* Add spacing from other elements */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute; /* Use absolute positioning */
+  bottom: 40px; /* Distance from the bottom of the container */
+  left: 20%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for true center */
+}
+
+.consult-now:hover {
+  background-color: #000000; /* Darker blue on hover */
+  transform: scale(2);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it spans the container */
+  position: relative; /* Enable absolute positioning for child elements */
+  height: 100%; /* Ensure it covers the background image */
+  text-align: center; /* Center align text */
+}
+
+.lawyers-info {
+  margin-top: 20px;
+}
+
+.lawyers-info .lawyers {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lawyers-info .lawyers img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.lawyers-info p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+.consult-now {
+  background-color: #007BFF; /* Blue background */
+  color: white; /* White text */
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.consult-now:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* Ensure the navbar background matches the page */
+  padding: 10px 20px; /* Adjust padding as needed */
+  box-shadow: 0px 2px 4px #0000001a; /* Optional shadow for separation */
+}
+
+
+
+/* Add white space below the navbar */
+.navbar-container {
+  margin-bottom: 20px; /* Adjust the margin to create white space */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: 30px; /* Reduced margin for smaller screens */
+    background-size: cover; /* Adjust to fit smaller devices */
+  }
+}
+body {
+  background-color: #ffffff; /* Ensure the entire page is white */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: #ffffff; /* Match the background color to white */
+}
+
